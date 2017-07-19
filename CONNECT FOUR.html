@@ -1,0 +1,110 @@
+<html>
+
+<head>
+    <title> Connect Four </title>
+    <style>
+        button {
+            height: 50px;
+            width: 75px;
+            margin: 10px;
+        }
+
+        .tile {
+            border: 2px solid red;
+            width: 75px;
+            height: 75px;
+            margin: 10px;
+        }
+        .blue{
+            background-color:blue;
+            border: 2px solid red;
+            width: 75px;
+            height: 75px;
+            margin: 10px;
+        }
+        .green{
+            background-color: green;
+            border: 2px solid red;
+            width: 75px;
+            height: 75px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        Turn: <span id="turnDisplay"></span>
+    </div>
+    <div>
+        <button id=0 onclick="fill(0)">1</button>
+        <button id=1 onclick="fill(1)">2</button>
+        <button id=2 onclick="fill(2)">3</button>
+        <button id=3 onclick="fill(3)">4</button>
+        <button id=4 onclick="fill(4)">5</button>
+        <button id=5 onclick="fill(5)">6</button>
+        <button id=6 onclick="fill(6)">7</button>
+    </div>
+    <div>
+        <div id="coloumn0" style=" float: left; position:relative">
+            <div id="05" class="tile"></div>
+            <div id="04" class="tile"></div>
+            <div id="03" class="tile"></div>
+            <div id="02" class="tile"></div>
+            <div id="01" class="tile"></div>
+            <div id="00" class="tile"></div>
+        </div>
+        <div id="coloumn1" style=" float: left; position:relative">
+            <div id="15" class="tile"></div>
+            <div id="14" class="tile"></div>
+            <div id="13" class="tile"></div>
+            <div id="12" class="tile"></div>
+            <div id="11" class="tile"></div>
+            <div id="10" class="tile"></div>
+        </div>
+        <div id="coloumn2" style=" float: left; position:relative">
+            <div id="25" class="tile"></div>
+            <div id="24" class="tile"></div>
+            <div id="23" class="tile"></div>
+            <div id="22" class="tile"></div>
+            <div id="21" class="tile"></div>
+            <div id="20" class="tile"></div>
+        </div>
+        <div id="coloumn3" style=" float: left; position:relative">
+            <div id="35" class="tile"></div>
+            <div id="34" class="tile"></div>
+            <div id="33" class="tile"></div>
+            <div id="32" class="tile"></div>
+            <div id="31" class="tile"></div>
+            <div id="30" class="tile"></div>
+        </div>
+        <div id="coloumn4" style=" float: left; position:relative">
+            <div id="45" class="tile"></div>
+            <div id="44" class="tile"></div>
+            <div id="43" class="tile"></div>
+            <div id="42" class="tile"></div>
+            <div id="41" class="tile"></div>
+            <div id="40" class="tile"></div>
+        </div>
+        <div id="coloumn5" style=" float: left; position:relative">
+            <div id="55" class="tile"></div>
+            <div id="54" class="tile"></div>
+            <div id="53" class="tile"></div>
+            <div id="52" class="tile"></div>
+            <div id="51" class="tile"></div>
+            <div id="50" class="tile"></div>
+        </div>
+        <div id="coloumn6" style=" float: left; position:relative">
+            <div id="65" class="tile"></div>
+            <div id="64" class="tile"></div>
+            <div id="63" class="tile"></div>
+            <div id="62" class="tile"></div>
+            <div id="61" class="tile"></div>
+            <div id="60" class="tile"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="connectfour.js"></script>
+</body>
+
+</html>
